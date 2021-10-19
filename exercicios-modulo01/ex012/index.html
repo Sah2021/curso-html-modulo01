@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 12 de HTML</title>
+</head>
+
+<!-- Início do CSS-->
+<style>
+    body{
+        background-color: aliceblue;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 15pt;
+        color: rgb(4, 55, 100);
+        text-align: center;
+    }
+    h2{
+        font-style: italic;
+        color: rgb(7, 83, 150);
+    }
+    footer{
+        background-color: white;
+        width: 100%;
+        height: 50px;
+        margin-top: 60px;
+        box-shadow: 1px 1px 1px rgb(3, 48, 87);              
+    
+    }
+    h4{
+        padding-top: 8px;
+    }
+</style>
+<!-- Fim do CSS -->
+
+<body>
+    <h1>Exercício 12 de HTML</h1>
+    <h2>Inserindo vídeos hospedados localmente</h2>
+    <p>Este vídeo está hospedado no meu próprio servidor</p>
+    <!-- Vídeos hospedados no próprio servidor fica muito mais caro, pois tem muito gasto de dados-->
+    <video width="300" poster = "imagens/pes.png" controls autoplay> 
+
+        <source src="midia/meu-video-mp4.mp4" type="video/mp4">
+        <source src="midia/meu-video-m4v.m4v" type="video/mp4"> 
+        <source src="midia/meu-video-webm.webm" type="video/webm">
+        <p>Seu navegador não é compatível com reprodutor de vídeo</p>        
+        
+    </video>
+
+    <h2>Inserindo vídeos de hospedagem externa</h2>
+    <p>Este vídeo está hospedado no youtube</p>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/OZijpH-uSAI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <p>Este vídeo está hospedado no Vímeo</p>
+  
+<iframe src="https://player.vimeo.com/video/271879606?h=22d7abbd34&title=0&byline=0&portrait=0" width="560" height="237" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+<footer>
+    <h4>Este exercício foi feito por Salete dos Santos</h4>
+</footer>
+    
+</body>
+</html>
